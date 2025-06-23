@@ -15,6 +15,21 @@ module.exports = {
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
+      {
+        allowExportNames: [
+          "loader",
+          "clientLoader",
+          "action",
+          "clientAction",
+          "ErrorBoundary",
+          "HydrateFallback",
+          "headers",
+          "handle",
+          "links",
+          "meta",
+          "shouldRevalidate",
+        ],
+      },
     ],
     "no-unused-vars": "warn",
     "react/prop-types": "off",
